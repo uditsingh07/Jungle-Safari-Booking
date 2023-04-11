@@ -1,0 +1,26 @@
+<h2>Edit Booking</h2>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Full Name" [(ngModel)]="booking.name" name="name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Choose your dates</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input matStartDate placeholder="Start date" [(ngModel)]="booking.dateFrom" name="dateFrom">
+        <input matEndDate placeholder="End date" [(ngModel)]="booking.dateTo" name="dateTo">
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+  </div>
+
+  <div>Total cost: {{ calculateTotalCost() | currency:'INR':'symbol' }}</div>
+
+  <button type="submit">Save</button>
+</form>
+

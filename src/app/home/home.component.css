@@ -1,0 +1,17 @@
+.full-screen {
+  background-image: url("/assets/tigor.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 91.3%;
+  background-color: cornflowerblue;
+}
+
+.center-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
