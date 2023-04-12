@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\home",
+    "\\src\\assets"
   ],
-  "SelectedNode": "\\C:\\Users\\Udit\\OneDrive\\Desktop\\Jungle_Safari",
+  "SelectedNode": "\\src\\app\\home\\home.component.css",
   "PreviewInSolutionExplorer": false
 }
